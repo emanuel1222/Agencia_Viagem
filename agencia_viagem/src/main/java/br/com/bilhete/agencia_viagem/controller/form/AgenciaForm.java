@@ -16,7 +16,7 @@ public class AgenciaForm {
     private String nome;
 	@NotNull @NotEmpty @Length(min = 15, max = 100, message = "About Me must be between 15 and 100 characters")
     private String endereco;
-	@NotNull @NotEmpty @Length(min = 8, max = 15, message = "About Me must be between 8 and 15 characters")
+	@NotNull @NotEmpty //@Length(min = 8, max = 15, message = "About Me must be between 8 and 15 characters")
 	private String telefone;
 
 
@@ -45,6 +45,6 @@ public class AgenciaForm {
     }
 
     public Agencia converter() {
-        return new Agencia(nome, endereco);
+        return new Agencia(nome, endereco,telefone);
     }
 }

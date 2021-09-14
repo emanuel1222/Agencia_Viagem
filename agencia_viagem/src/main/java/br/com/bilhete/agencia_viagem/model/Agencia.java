@@ -14,6 +14,8 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 
 import scala.collection.immutable.List;
 
@@ -30,7 +32,7 @@ public class Agencia {
     @Column(name = "endereco", nullable = false)
     private String endereco;
     
-    @Column(name = "telefone", nullable = true)
+    @Column(name = "telefone", nullable = false)
     private String telefone;
     
     @Column(name = "estahAberta", nullable = true)
@@ -47,9 +49,10 @@ public class Agencia {
 
     
     
-    public Agencia(String nome, String endereco) {
+    public Agencia(String nome, String endereco, String telefone) {
         this.setNome(nome);
         this.setEndereco(endereco);
+        this.setTelefone(telefone);
     }
 
     public String getTelefone() {
