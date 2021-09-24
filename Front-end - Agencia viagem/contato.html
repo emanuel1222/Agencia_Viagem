@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contato - Agencia Easy Travelling</title>
+
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="caixa">
+                <h1><img src="logo.png" alt="Logo do aplicativo Easy Travelling" class="logo"></h1>
+                <nav>
+                    <ul> 
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Agencias</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <form>
+                <label for="nome_agencia">Nome da agência</label>
+                <input type="text" id="nome_agencia" class="input-padrao" required placeholder="Agência CDEFG">
+
+                <label for="endereco">Endereço</label>
+                <input type="text" id="endereco" class="input-padrao" required placeholder="Rua: ABCDE, Bairro: EFGH, Cidade: KYZW, Casa n°: 000">
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+                <label for="mensagem">Observações da agência</label>
+                <textarea cols="70" rows="10"></textarea>
+
+                <fieldset>
+                    <legend>Contato principal da agência</legend>
+                    <label for="radio-telefone"><input type="radio" name="contato" value="email" id="radio-telefone">Telefone</label>
+    
+                    <label for="radio-wpp"><input type="radio" name="contato" value="whatsapp" id="radio-wpp" checked>Whatsapp</label>
+    
+                    <label for="radio-email"><input type="radio"  name="contato" value="email" id="radio-email">Email</label>
+                    
+                </fieldset>
+
+                <fieldset>
+                    <legend>Período de funcionamento</legend>
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
+
+                <label class="checkbox"><input type="checkbox">Notificar dados cadastrais incompletos?</label>
+
+                <input type="submit" value="Enviar dados" class="enviar">
+
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                    </tr>  
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Segunda</td>
+                        <td>8h - 18h</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Quarta</td>
+                        <td>8h - 18h</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Terça - Quinta - Sexta</td>
+                        <td>8h - 19h</td>
+                    </tr>
+                </tbody>
+
+
+            </table>
+
+
+
+        </main>
+
+        <footer>
+            <img src="logo_new.PNG" alt="Logo do aplicativo Easy Travelling">
+            <p class="copyright">&copy; Copyright Easy Travelling - 2021</p>
+        </footer>
+    </body>
+</html>
